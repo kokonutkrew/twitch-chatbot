@@ -43,13 +43,13 @@ client.on('connected', (address, port) => {
 client.on('chat', (channel, user, message, self) => {
   switch(message) {
     case '!kk': 
-      client.action('shinbot', `${user['display-name']} you passed the test!`);
+      client.action('s4m04nsl4y3r', `${user['display-name']} you passed the test!`);
       break;
     case '!twitter': 
-      client.action('shinbot', `${user['display-name']} you can find it at twitter.com/s4m04nsl4y3r`);
+      client.action('s4m04nsl4y3r', `${user['display-name']} you can find it at twitter.com/s4m04nsl4y3r`);
       break;
     case '!github': 
-      client.action('shinbot', `${user['display-name']} you can find it at github.com/s4m04nsl4y3r`);
+      client.action('s4m04nsl4y3r', `${user['display-name']} you can find it at github.com/s4m04nsl4y3r`);
       break;
     default:
       break;
