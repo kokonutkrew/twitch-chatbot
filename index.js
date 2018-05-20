@@ -25,7 +25,7 @@ let options = {
     username: process.env.USERNAME,
     password: process.env.PASSWORD
   },
-    channels: ["s4m04nsl4y3r"]
+    channels: ["s4m04nsl4y3r, tygrrrlilly"]
 };
 
 // Set up our new TMI client and connect to the server.
@@ -39,16 +39,16 @@ client.on('connected', (address, port) => {
 })
 
 // This simple bot will simply monitor chat logging for instances of '!twitter' or '!github'.
-// 
+//
 client.on('chat', (channel, user, message, self) => {
   switch(message) {
-    case '!kk': 
+    case '!kk':
       client.action('s4m04nsl4y3r', `${user['display-name']} you passed the test!`);
       break;
-    case '!twitter': 
+    case '!twitter':
       client.action('s4m04nsl4y3r', `${user['display-name']} you can find it at twitter.com/s4m04nsl4y3r`);
       break;
-    case '!github': 
+    case '!github':
       client.action('s4m04nsl4y3r', `${user['display-name']} you can find it at github.com/s4m04nsl4y3r`);
       break;
     default:
